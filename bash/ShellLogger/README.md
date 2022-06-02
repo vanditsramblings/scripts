@@ -1,4 +1,4 @@
-##  Bash Logger
+##  Shell Logger
 
 -------------------------------------------
 A comprehensive reusable logger utility in bash.
@@ -13,6 +13,7 @@ Exposed methods :
 - error
 -------------------------------------------
 
-Todos :
-- Color Highlighting
+## Example :
 
+
+![Example](img/img.png)

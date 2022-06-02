@@ -17,7 +17,15 @@ LOG_COL_CYAN='\033[0;36m'
 
 function log_info() {
   TIMESTAMP=`date +%Y-%m-%d_%H-%M-%S`
-  printf "${LOG_COL_BLUE}INFO${NC}:::${LOG_COL_PURPLE}$TIMESTAMP${NC}:::$1\n"
+  printf "${LOG_COL_BLUE}INFO${NC}::::${LOG_COL_PURPLE}$TIMESTAMP${NC}:::${LOG_COL_GREEN}$1\n"
 }
 
+function log_debug() {
+  TIMESTAMP=`date +%Y-%m-%d_%H-%M-%S`
+  printf "${LOG_COL_BLUE}DEBUG${NC}:::${LOG_COL_PURPLE}$TIMESTAMP${NC}:::${LOG_COL_YELLOW}$1\n"
+}
 
+function log_error() {
+  TIMESTAMP=`date +%Y-%m-%d_%H-%M-%S`
+  printf "${LOG_COL_BLUE}ERROR${NC}:::${LOG_COL_PURPLE}$TIMESTAMP${NC}:::${LOG_COL_RED}$1\n"
+}
